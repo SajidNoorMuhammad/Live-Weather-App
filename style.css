@@ -40,14 +40,14 @@ h1{
     color: #800000;
 }
 
-/* input{
+input{
     border: 1px solid #007bff;
     outline: #007bff;
-} */
-
-button:hover {
-    background: #0056b3;
 }
+
+/* button:hover {
+    background: #0056b3;
+} */
 
 #weatherResult {
     margin-top: 20px;
