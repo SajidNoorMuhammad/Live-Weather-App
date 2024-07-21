@@ -49,14 +49,14 @@ button:hover {
     background: #0056b3;
 }
 
-/* #weatherResult {
+#weatherResult {
     margin-top: 20px;
-} */
-
+}
+/* 
 #weatherIcon {
     width: 100px;
     height: 100px;
-}
+} */
 
 b{
     margin-right: 10px;
