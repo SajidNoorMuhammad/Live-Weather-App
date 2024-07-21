@@ -9,8 +9,8 @@ const getweather = (city) => {
     const apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}&units=metric`
     const cityName = document.getElementById("city")
     fetch(apiurl)
-        // .then(response => response.json())
-        .then(data => {
+        .then(response => response.json())
+        // .then(data => {
             const weatherResult = document.getElementById('weatherResult');
             if (data.cod === 200) {
                 const weather = data.weather[0].main.toLowerCase();
