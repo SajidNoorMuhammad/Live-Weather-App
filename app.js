@@ -21,8 +21,7 @@ const getweather = (city) => {
                         weatherIcon = 'Images/clear.webp'
                         break;
                     case 'sunny':
-                        // weatherIcon = 'Images/sun.jpg'
-                        weatherClass = ''
+                        weatherIcon = 'Images/sun.jpg'
                         break;
                     case 'clouds':
                         weatherIcon = 'Images/cloud.jpg'
