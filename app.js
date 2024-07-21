@@ -54,8 +54,8 @@ const getweather = (city) => {
                 <p><b>Weather:</b>${data.weather[0].description}</p>
                 <p><b>Humidity:</b>${data.main.humidity}%</p>
                 <p><b>Wind Speed:</b>${data.wind.speed}(m/s)</p>
-                // <p><b>Clouds:</b>${data.clouds.all}%</p>                
-                <p><b>Feels:</b><span id='feel'>${data.main.feels_like}°C</span></p>                
+                <p><b>Clouds:</b>${data.clouds.all}%</p>                
+                // <p><b>Feels:</b><span id='feel'>${data.main.feels_like}°C</span></p>                
                 `
             } else {
                 weatherResult.innerHTML += `<p>${data.message}</p>`
