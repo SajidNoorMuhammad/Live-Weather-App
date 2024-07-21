@@ -43,12 +43,10 @@ const getweather = (city) => {
                         break;
                     case 'thunderstorm':
                         weatherIcon = 'Images/thunderstorm.jpg'
-                        // break;
-
+                        break;
                     default:
                 }
-                document.body.className = weatherClass;
-                weatherResult.innerHTML = `
+                // weatherResult.innerHTML = `
                 <h2><u>${cityName.value.toUpperCase()}</u></h2>
                 <img src="${weatherIcon}" alt="" id="weatherIcon">
                 <p><b>City:</b>${data.name}</p>
@@ -70,13 +68,13 @@ const getweather = (city) => {
                 document.body.style.backgroundImage = "url('Images/clouds.jpg')";
             } else if (weatherMain.includes('rainy')) {
                 document.body.style.backgroundImage = "url('Images/rainybg.jpg')";
-            }else if (weatherMain.includes('snowy')) {
+            } else if (weatherMain.includes('snowy')) {
                 document.body.style.backgroundImage = "url('Images/snowbg.jpg')";
-            }else if (weatherMain.includes('haze') || weatherMain.includes('smoke')) {
+            } else if (weatherMain.includes('haze') || weatherMain.includes('smoke')) {
                 document.body.style.backgroundImage = "url('Images/hazebg.webp')";
             } else if (weatherMain.includes('thunderstorm')) {
                 document.body.style.backgroundImage = "url('Images/thunderstormbg.jpeg')";
-            }  else {
+            } else {
                 document.body.style.backgroundImage = "url('default.jpg')";
             }
 
