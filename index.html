@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Update</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website Icon" type="jpg" href="Images/b.jpg">
+</head>
+<body id="bg">
+    <div class="container">
+        <h1>Live Weather App</h1>
+        <form id="weatherForm">
+            <input type="text" id="city" placeholder="Enter City Name" required>
+            <button type="submit">Get Weather</button>
+        </form>
+
+        <div id="weatherResult">
+            <img id="weatherIcon" src="" alt="Weather Image" style="display: none;">
+            <div id="weatherInfo"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
