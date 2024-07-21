@@ -58,10 +58,10 @@ const getweather = (city) => {
                 <p><b>Feels:</b><span id='feel'>${data.main.feels_like}°C</span></p>                
                 `
             } else {
-                // weatherResult.innerHTML += `<p>${data.message}</p>`
+                weatherResult.innerHTML += `<p>${data.message}</p>`
             }
 
-            const weatherMain = data.weather[0].main.toLowerCase();
+            // const weatherMain = data.weather[0].main.toLowerCase();
             if (weatherMain.includes('clear') || weatherMain.includes('sun')) {
                 document.body.style.backgroundImage = "url('Images/clearback.webp')";
             } else if (weatherMain.includes('cloud')) {
