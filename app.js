@@ -47,7 +47,7 @@ const getweather = (city) => {
                     default:
                 }
                 weatherResult.innerHTML = `
-                <h2><u>${cityName.value.toUpperCase()}</u></h2>
+                // <h2><u>${cityName.value.toUpperCase()}</u></h2>
                 <img src="${weatherIcon}" alt="" id="weatherIcon">
                 <p><b>City:</b>${data.name}</p>
                 <p><b>Temprature:</b><span id= 'temp'>${data.main.temp}°C</span></p>
