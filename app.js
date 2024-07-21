@@ -20,8 +20,8 @@ const getweather = (city) => {
                     case 'clear':
                         weatherIcon = 'Images/clear.webp'
                         break;
-                    // case 'sunny':
-                        weatherIcon = 'Images/sun.jpg'
+                    case 'sunny':
+                        // weatherIcon = 'Images/sun.jpg'
                         weatherClass = ''
                         break;
                     case 'clouds':
