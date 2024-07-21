@@ -12,8 +12,8 @@ const getweather = (city) => {
         .then(response => response.json())
         .then(data => {
             const weatherResult = document.getElementById('weatherResult');
-            // if (data.cod === 200) {
-                const weather = data.weather[0].main.toLowerCase();
+            if (data.cod === 200) {
+                // const weather = data.weather[0].main.toLowerCase();
                 let weatherClass;
                 let weatherIcon;
                 let bodybg = document.getElementById("bg");
