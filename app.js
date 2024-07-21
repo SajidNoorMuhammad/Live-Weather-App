@@ -50,8 +50,8 @@ const getweather = (city) => {
                 <h2><u>${cityName.value.toUpperCase()}</u></h2>
                 <img src="${weatherIcon}" alt="" id="weatherIcon">
                 <p><b>City:</b>${data.name}</p>
-                // <p><b>Temprature:</b><span id= 'temp'>${data.main.temp}°C</span></p>
-                <p><b>Weather:</b>${data.weather[0].description}</p>
+                <p><b>Temprature:</b><span id= 'temp'>${data.main.temp}°C</span></p>
+                // <p><b>Weather:</b>${data.weather[0].description}</p>
                 <p><b>Humidity:</b>${data.main.humidity}%</p>
                 <p><b>Wind Speed:</b>${data.wind.speed}(m/s)</p>
                 <p><b>Clouds:</b>${data.clouds.all}%</p>                
