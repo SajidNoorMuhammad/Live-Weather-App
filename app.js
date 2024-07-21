@@ -28,8 +28,8 @@ const getweather = (city) => {
                         break;
                     case 'rainy':
                         weatherIcon = 'Images/rainy.png'
-                        // break;
-                    case 'rain':
+                        break;
+                    // case 'rain':
                         weatherIcon = 'Images/rainy.png'
                         weatherClass = 'rainy'
                         break;
