@@ -70,8 +70,8 @@ const getweather = (city) => {
                 document.body.style.backgroundImage = "url('Images/rainybg.jpg')";
             } else if (weatherMain.includes('snowy')) {
                 document.body.style.backgroundImage = "url('Images/snowbg.jpg')";
-            // } else if (weatherMain.includes('haze') || weatherMain.includes('smoke')) {
-                document.body.style.backgroundImage = "url('Images/hazebg.webp')";
+            } else if (weatherMain.includes('haze') || weatherMain.includes('smoke')) {
+                // document.body.style.backgroundImage = "url('Images/hazebg.webp')";
             } else if (weatherMain.includes('thunderstorm')) {
                 document.body.style.backgroundImage = "url('Images/thunderstormbg.jpeg')";
             } else {
