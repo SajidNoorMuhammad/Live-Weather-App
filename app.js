@@ -1,7 +1,7 @@
 document.getElementById("weatherForm").addEventListener('submit', (event) => {
     event.preventDefault();
-    // const city = document.getElementById('city').value;
-    getweather(city);
+    const city = document.getElementById('city').value;
+    // getweather(city);
 })
 
 const getweather = (city) => {
