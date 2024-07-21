@@ -45,13 +45,13 @@ input{
     outline: #007bff;
 }
 
-/* button:hover {
+button:hover {
     background: #0056b3;
-} */
-
-#weatherResult {
-    margin-top: 20px;
 }
+
+/* #weatherResult {
+    margin-top: 20px;
+} */
 
 #weatherIcon {
     width: 100px;
