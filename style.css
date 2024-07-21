@@ -1,4 +1,4 @@
-/* body {
+body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,16 +10,15 @@
     height: 100vh;
     margin: 0;
     background-image: url(Images/a.avif);
-} */
+}
 
-.container {
+/* .container {
     text-align: center;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     width: 30%;
-    /* margin-left: 20%; */
-}
+} */
 
 input {
     padding: 10px;
