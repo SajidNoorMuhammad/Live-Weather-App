@@ -11,8 +11,8 @@ const getweather = (city) => {
     fetch(apiurl)
         .then(response => response.json())
         .then(data => {
-            // const weatherResult = document.getElementById('weatherResult');
-            if (data.cod === 200) {
+            const weatherResult = document.getElementById('weatherResult');
+            // if (data.cod === 200) {
                 const weather = data.weather[0].main.toLowerCase();
                 let weatherClass;
                 let weatherIcon;
