@@ -23,8 +23,8 @@ const getweather = (city) => {
                     case 'sunny':
                         weatherIcon = 'Images/sun.jpg'
                         break;
-                    // case 'clouds':
-                        weatherIcon = 'Images/cloud.jpg'
+                    case 'clouds':
+                        // weatherIcon = 'Images/cloud.jpg'
                         let cloud = document.getElementById('cloudbg')
                         break;
                     case 'rainy':
