@@ -1,5 +1,5 @@
-// document.getElementById("weatherForm").addEventListener('submit', (event) => {
-    event.preventDefault();
+document.getElementById("weatherForm").addEventListener('submit', (event) => {
+    // event.preventDefault();
     const city = document.getElementById('city').value;
     getweather(city);
 })
