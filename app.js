@@ -4,8 +4,8 @@ document.getElementById("weatherForm").addEventListener('submit', (event) => {
     getweather(city);
 })
 
-// const getweather = (city) => {
-    const APIkey = "4f62b4511aae25559f2ae77ae94ab77a";
+const getweather = (city) => {
+    // const APIkey = "4f62b4511aae25559f2ae77ae94ab77a";
     const apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}&units=metric`
     const cityName = document.getElementById("city")
     fetch(apiurl)
@@ -87,7 +87,7 @@ document.getElementById("weatherForm").addEventListener('submit', (event) => {
             } else if (weatherMain.includes('thunderstorm')) {
                 document.body.style.backgroundImage = "url('Images/thunderstormbg.jpeg')";
             }  else {
-                document.body.style.backgroundImage = "url('Images/default.jpg')";
+                document.body.style.backgroundImage = "url('default.jpg')";
             }
 
             if (data.main.feels_like > 40) {
