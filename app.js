@@ -19,8 +19,8 @@ const getweather = (city) => {
                 switch (weather) {
                     case 'clear':
                         weatherIcon = 'Images/clear.webp'
-                        // break;
-                    case 'sunny':
+                        break;
+                    // case 'sunny':
                         weatherIcon = 'Images/sun.jpg'
                         weatherClass = ''
                         break;
