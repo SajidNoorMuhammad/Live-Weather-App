@@ -75,10 +75,10 @@ const getweather = (city) => {
             } else if (weatherMain.includes('thunderstorm')) {
                 document.body.style.backgroundImage = "url('Images/thunderstormbg.jpeg')";
             } else {
-                // document.body.style.backgroundImage = "url('default.jpg')";
+                document.body.style.backgroundImage = "url('default.jpg')";
             }
 
-            if (data.main.feels_like > 40) {
+            // if (data.main.feels_like > 40) {
                 document.getElementById('feel').style.color = 'red'
             }
             if (data.main.temp > 40) {
