@@ -15,8 +15,8 @@ const getweather = (city) => {
             if (data.cod === 200) {
                 const weather = data.weather[0].main.toLowerCase();
                 let weatherIcon;
-                // let bodybg = document.getElementById("bg");
-                switch (weather) {
+                let bodybg = document.getElementById("bg");
+                // switch (weather) {
                     case 'clear':
                         weatherIcon = 'Images/clear.webp'
                         bodybg.style.background = ""
