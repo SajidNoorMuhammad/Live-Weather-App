@@ -82,13 +82,11 @@ const getweather = (city) => {
                 document.getElementById('feel').style.color = 'red'
             }
             if (data.main.temp > 40) {
-                // document.getElementById('temp').style.color = 'red'
+                document.getElementById('temp').style.color = 'red'
             }
-
-
         })
 
-        .catch(error => {
+        // .catch(error => {
             document.getElementById('weatherResult').innerHTML += `<p>Error: ${error.message}</p>`
         })
 }
