@@ -67,8 +67,8 @@ const getweather = (city) => {
             } else if (weatherMain.includes('cloud')) {
                 document.body.style.backgroundImage = "url('Images/clouds.jpg')";
             } else if (weatherMain.includes('rainy')) {
-                // document.body.style.backgroundImage = "url('Images/rainybg.jpg')";
-            } else if (weatherMain.includes('snowy')) {
+                document.body.style.backgroundImage = "url('Images/rainybg.jpg')";
+            // } else if (weatherMain.includes('snowy')) {
                 document.body.style.backgroundImage = "url('Images/snowbg.jpg')";
             } else if (weatherMain.includes('haze') || weatherMain.includes('smoke')) {
                 document.body.style.backgroundImage = "url('Images/hazebg.webp')";
