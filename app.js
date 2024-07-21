@@ -37,8 +37,8 @@ const getweather = (city) => {
                         break;
                     case 'haze':
                         weatherIcon = 'Images/haze.webp'
-                        // break;
-                    case 'smoke':
+                        break;
+                    // case 'smoke':
                         weatherIcon = 'Images/haze.webp'
                         weatherClass = ''
                         break;
