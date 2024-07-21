@@ -46,6 +46,7 @@ const getweather = (city) => {
                         break;
                     default:
                 }
+                const time = new Date(data.sys.sunset * 1000).toLocaleTimeString();
                 weatherResult.innerHTML = `
                 <h2><u>${cityName.value.toUpperCase()}</u></h2>
                 <p><b>City:</b>${data.name}</p>
@@ -54,7 +55,9 @@ const getweather = (city) => {
                 <p><b>Humidity:</b>${data.main.humidity}%</p>
                 <p><b>Wind Speed:</b>${data.wind.speed}(m/s)</p>
                 <p><b>Clouds:</b>${data.clouds.all}%</p>                
-                <p><b>Feels:</b><span id='feel'>${data.main.feels_like}°C</span></p>                
+                <p><b>Feels:</b><span id='feel'>${data.main.feels_like}°C</span></p>   
+                <p><b>Sunset:</b>${time}</p>                
+
                 `
             } else {
                 weatherResult.innerHTML += `<p>${data.message}</p>`
@@ -77,6 +80,14 @@ const getweather = (city) => {
                 document.body.style.backgroundImage = "url('default.jpg')";
             }
 
+            const time = new Date(data.sys.sunset * 1000).toLocaleTimeString();
+            const news = new Date().toLocaleTimeString();
+            if (news > time) {
+                if (weatherMain.includes('clear') || weatherMain.includes('sun')) {
+                    document.body.style.backgroundImage = "url('Images/night.webp')";
+                }
+            }
+
             if (data.main.feels_like > 40) {
                 document.getElementById('feel').style.color = 'red'
             }
@@ -86,6 +97,8 @@ const getweather = (city) => {
         })
 
         .catch(error => {
-            // document.getElementById('weatherResult').innerHTML += `<p>Error: ${error.message}</p>`
+            document.getElementById('weatherResult').innerHTML += `<p>Error: ${error.message}</p>`
         })
 }
+
+// console.log(new Date ().toLocaleTimeString())
