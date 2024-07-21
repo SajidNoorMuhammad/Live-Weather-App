@@ -86,7 +86,7 @@ const getweather = (city) => {
             }
         })
 
-        // .catch(error => {
-            document.getElementById('weatherResult').innerHTML += `<p>Error: ${error.message}</p>`
+        .catch(error => {
+            // document.getElementById('weatherResult').innerHTML += `<p>Error: ${error.message}</p>`
         })
 }
