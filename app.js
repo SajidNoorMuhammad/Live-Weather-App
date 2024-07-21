@@ -17,8 +17,8 @@ const getweather = (city) => {
                 let weatherIcon;
                 let bodybg = document.getElementById("bg");
                 switch (weather) {
-                    // case 'clear':
-                        weatherIcon = 'Images/clear.webp'
+                    case 'clear':
+                        // weatherIcon = 'Images/clear.webp'
                         bodybg.style.background = ""
                         break;
                     case 'sunny':
