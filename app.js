@@ -42,8 +42,8 @@ const getweather = (city) => {
                         weatherIcon = 'Images/haze.webp'
                         break;
                     case 'thunderstorm':
-                        // weatherIcon = 'Images/thunderstorm.jpg'
-                        break;
+                        weatherIcon = 'Images/thunderstorm.jpg'
+                        // break;
 
                     default:
                 }
