@@ -79,9 +79,9 @@ const getweather = (city) => {
             }
 
             if (data.main.feels_like > 40) {
-                // document.getElementById('feel').style.color = 'red'
+                document.getElementById('feel').style.color = 'red'
             }
-            if (data.main.temp > 40) {
+            // if (data.main.temp > 40) {
                 document.getElementById('temp').style.color = 'red'
             }
 
