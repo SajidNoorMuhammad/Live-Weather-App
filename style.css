@@ -52,15 +52,15 @@ button:hover {
 #weatherResult {
     margin-top: 20px;
 }
-/* 
+
 #weatherIcon {
     width: 100px;
     height: 100px;
-} */
-
-b{
-    margin-right: 10px;
 }
+
+/* b{
+    margin-right: 10px;
+} */
 
 p{
     font-size: 20px;
