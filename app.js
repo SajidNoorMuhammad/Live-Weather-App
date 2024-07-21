@@ -5,8 +5,8 @@ document.getElementById("weatherForm").addEventListener('submit', (event) => {
 })
 
 const getweather = (city) => {
-    // const APIkey = "4f62b4511aae25559f2ae77ae94ab77a";
-    const apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}&units=metric`
+    const APIkey = "4f62b4511aae25559f2ae77ae94ab77a";
+    // const apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}&units=metric`
     const cityName = document.getElementById("city")
     fetch(apiurl)
         .then(response => response.json())
