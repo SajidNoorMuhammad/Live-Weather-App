@@ -35,11 +35,11 @@ button {
     cursor: pointer;
 }
 
-h1{
+h1 {
     color: #800000;
 }
 
-input{
+input {
     border: 1px solid #007bff;
     outline: #007bff;
 }
@@ -57,17 +57,26 @@ button:hover {
     height: 100px;
 }
 
-b{
+b {
     margin-right: 10px;
 }
 
-p{
+p {
     font-size: 20px;
 }
 
-h1:hover{
+h1:hover {
     color: gold;
 }
 
+@media only screen and (max-width: 700px) {
+    .container{
+        width: 100%;
+    }
+}
 
-
+@media only screen and (max-width: 360px) {
+    button{
+        margin-top: 5%;
+    }
+}
