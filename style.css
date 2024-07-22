@@ -69,13 +69,13 @@ h1:hover {
     color: gold;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1066px) {
     .container{
         width: 100%;
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 1066px) {
     button{
         margin-top: 5%;
     }
