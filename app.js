@@ -72,7 +72,7 @@ const getweather = (city) => {
                 document.body.style.backgroundImage = "url('Images/rainybg.jpg')";
             } else if (weatherMain.includes('snowy')) {
                 document.body.style.backgroundImage = "url('Images/snowbg.jpg')";
-            } else if (weatherMain.includes('haze') || weatherMain.includes('smoke')) {
+            } else if (weatherMain.includes('haze') || weatherMain.includes('smoke') || weatherMain.includes('mist')) {
                 document.body.style.backgroundImage = "url('Images/hazebg.webp')";
             } else if (weatherMain.includes('thunderstorm')) {
                 document.body.style.backgroundImage = "url('Images/thunderstormbg.jpeg')";
@@ -81,10 +81,14 @@ const getweather = (city) => {
             }
 
             const time = new Date(data.sys.sunset * 1000).toLocaleTimeString();
-            const news = new Date().toLocaleTimeString();
-            if (news > time) {
+            const news = new Date();
+            if (news > data.sys.sunset) {
                 if (weatherMain.includes('clear') || weatherMain.includes('sun')) {
                     document.body.style.backgroundImage = "url('Images/night.webp')";
+                }
+
+                if(weatherMain.includes('cloud')){
+                    document.body.style.backgroundImage = "url('Images/nightcloudy.jpg')"
                 }
             }
 
