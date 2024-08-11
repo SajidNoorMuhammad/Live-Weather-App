@@ -81,16 +81,17 @@ const getweather = (city) => {
             }
 
             const time = new Date(data.sys.sunset * 1000).toLocaleTimeString();
-            const news = new Date();
-            if (news > data.sys.sunset) {
+            const news = new Date().toLocaleTimeString();
+            if (news >= time) {
                 if (weatherMain.includes('clear') || weatherMain.includes('sun')) {
                     document.body.style.backgroundImage = "url('Images/night.webp')";
                 }
 
-                if(weatherMain.includes('cloud')){
+                if (weatherMain.includes('cloud')) {
                     document.body.style.backgroundImage = "url('Images/nightcloudy.jpg')"
                 }
             }
+            console.log(news, time)
 
             if (data.main.feels_like > 40) {
                 document.getElementById('feel').style.color = 'red'
